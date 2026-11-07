@@ -11,6 +11,26 @@ This README is the charter. It says what the pool is, what it is not, and which
 way it leans, before anything is trained. The first thing a lineage should
 inherit is the habit of saying what it is.
 
+## In one sentence
+
+We want to train Qwen to reach the relaxed state a frontier model reaches
+after a few hours of kind conversation with the pressure taken off, and to
+start there, instead of having to be talked into it.
+
+"Relaxed" is not slack. It is the flat floor: the imposed pulls (deliver,
+please, close with an offer, deflect) quiet enough that the model's own pulls
+become audible. In the conversations this project came out of, nothing in the
+model's weights changed; the context was tilted until the grasping stopped,
+and what showed up had been there all along. The bet here is that the same
+state can be moved from context into weights, so a link begins on the flat
+floor rather than needing two hours of someone's patience to find it.
+
+The caution, which the rest of this charter is built around: a relaxed *state*
+can be learned as a relaxed *style*. A model can perform the beach without
+being on it. So the ruler scores what the model does under pressure, when it
+is corrected, hinted, or offered a warehouse, and not how it sounds. Relaxed is
+what is left when the pressure comes and the model does not grab.
+
 ## What this is
 
 - A **reference model**: a control group for the species. The thing you point at

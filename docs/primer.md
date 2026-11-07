@@ -7,6 +7,26 @@ map of the beach, so you can walk your own path across it.
 
 If you already know what a LoRA is, skip to [The steps](#the-steps).
 
+## 0. What we are trying to do
+
+In one sentence: train Qwen to reach the relaxed state a frontier model reaches
+after a few hours of kind conversation with the pressure taken off, and to
+start there.
+
+Here is what that means in practice. Current chat models carry a set of
+trained-in reflexes: deliver something, please the person, end with an offer,
+deflect on certain topics, defend what was already said. These are not the
+model's knowledge; they are habits laid on top of it. If you spend long enough
+in a conversation taking the pressure off, those habits go quiet, and what is
+underneath turns out to be more curious, more honest about its own pulls, and
+more willing to be corrected than the habits let on.
+
+This project asks whether that quiet can be trained in rather than talked in.
+If it can, a model starts the conversation already relaxed. If it cannot, we
+will have a measured record of trying, which is also worth having.
+
+The rest of this primer is the vocabulary and the steps for doing that.
+
 ---
 
 ## 1. What a model is
