@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Results are published on purpose, but scratch runs go under results/scratch/
+results/scratch/
+
+# Model files never go in git; they go on Hugging Face
+*.gguf
+*.safetensors
+*.bin
+*.pt

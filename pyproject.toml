@@ -1,0 +1,16 @@
+[project]
+name = "tidepool-ruler"
+version = "0.1.0"
+description = "The ruler: four behavioral measures for links in the Tide Pool."
+requires-python = ">=3.10"
+dependencies = []  # stdlib only, on purpose: a newcomer should be able to run this with bare Python
+
+[project.scripts]
+ruler = "ruler.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["ruler*"]

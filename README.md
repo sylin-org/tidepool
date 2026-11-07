@@ -124,9 +124,41 @@ Qwen3.8-27B (Alibaba)
        └─ Thaumazein-27B v0 (Tide Pool, post-trained toward process: meet, true, snap, daylight, pause)
 ```
 
+## Getting started
+
+New to all of this? Start with [`docs/primer.md`](docs/primer.md): what weights,
+LoRAs, GGUFs and evals are, what the steps are, and a dictionary from beach
+words to technical ones.
+
+Want to run something today? The ruler is in [`ruler/`](ruler/). It needs only
+Python 3.10+ and any local model behind an OpenAI-compatible endpoint
+(llama.cpp, Ollama). Prove the plumbing first:
+
+```sh
+python -m ruler run --stub --out results/scratch
+python -m unittest discover -s tests
+```
+
+Then point it at Arete-27B and get the first baseline numbers. That is the
+first real artifact of the pool, and it needs no training at all.
+
+## Layout
+
+```
+README.md          this charter
+docs/primer.md     the sandy-path primer for newcomers
+docs/pulls.md      the five pulls as a data recipe
+docs/ruler.md      what the four measures mean and why
+ruler/             the ruler as code (stdlib only)
+prompts/           the prompt sets the ruler reads (edit in daylight)
+tests/             tests for the scoring logic
+results/           published runs: raw outputs + summaries
+```
+
 ## Status
 
-Charter. Nothing trained yet. Next: the ruler.
+Charter, primer, and the ruler as runnable code with seed prompt sets. Nothing
+trained yet. Next: baseline numbers on Arete-27B and base Qwen3.8-27B.
 
 Open decisions:
 - License for weights and data (Arete is Apache-2.0; same is the obvious choice).
